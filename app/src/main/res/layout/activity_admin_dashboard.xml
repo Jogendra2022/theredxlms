@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/admin_background"
+    android:orientation="vertical"
+    tools:context=".AdminDashboardActivity">
+
+    <!-- SIDE NAVIGATION PANEL is now the main container -->
+    <LinearLayout
+        android:id="@+id/sidebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App Logo and Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_admin_logo"
+                app:tint="@color/admin_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="App Admin"
+                android:textColor="@color/admin_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_management"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="User Management"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_users"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_course_approval"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="Course Approval"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_approval"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_revenue_summary"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="Revenue Summary"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_revenue"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_push_notifications"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="Push Notifications"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_notifications"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_instructor_analytics"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="Instructor Analytics"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_analytics"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+        <!--  "ADD NEW COURSE" BUTTON IS NOW CORRECT -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_new_course"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingVertical="12dp"
+            android:text="Add New Course"
+            android:textColor="@color/admin_text_secondary"
+            app:icon="@drawable/ic_admin_approval"
+            app:iconPadding="16dp"
+            app:iconTint="@color/admin_text_secondary" />
+
+    </LinearLayout>
+
+</LinearLayout>

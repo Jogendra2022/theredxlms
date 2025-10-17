@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface"
+    tools:context=".ProfileFragment">
+
+    <!-- 1. App Bar with Back Button and Title -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Profile &amp; Settings" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 2. Scrollable Container for the Buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- My Courses Section -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_my_courses"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="My Courses"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                app:icon="@drawable/ic_my_courses"
+                app:iconPadding="16dp"/>
+
+            <!-- Inside My Courses (Initially Hidden) -->
+            <!-- My Courses Options (Initially Hidden) -->
+            <!-- Inside My Courses (Initially Hidden) -->
+            <LinearLayout
+                android:id="@+id/my_courses_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!-- MOVE THE TEXTVIEWS TO HERE -->
+                <TextView
+                    android:id="@+id/btn_ongoing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingVertical="8dp"
+                    android:text="Ongoing"/>
+
+                <TextView
+                    android:id="@+id/btn_completed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingVertical="8dp"
+                    android:text="Completed"/>
+
+            </LinearLayout>
+            <!-- THEY SHOULD BE REMOVED FROM DOWN HERE -->
+
+
+            <!-- Certificates Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_certificates"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="Certificates"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                app:icon="@drawable/ic_certificate"
+                app:iconPadding="16dp"/>
+
+            <!-- Inside Certificates (Initially Hidden) -->
+            <!-- Certificates Options (Initially Hidden) -->
+            <LinearLayout
+                android:id="@+id/certificates_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!-- View/Download Certificates Button -->
+                <TextView
+                    android:id="@+id/btn_view_download_certificates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="View / Download"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:drawableStartCompat="@drawable/ic_download"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+
+            <!-- Settings Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_settings"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="Settings"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                app:icon="@drawable/ic_settings"
+                app:iconPadding="16dp"/>
+
+            <!-- Inside Settings (Initially Hidden) -->
+            <!-- Settings Options (Initially Hidden) -->
+            <LinearLayout
+                android:id="@+id/settings_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!-- 1. Notification Settings Option -->
+                <TextView
+                    android:id="@+id/btn_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Notifications"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:drawableStartCompat="@drawable/ic_notifications"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"/>
+
+                <!-- 2. Dark Mode Option -->
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switch_dark_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Dark Mode"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:drawableStartCompat="@drawable/ic_dark_mode"
+                    android:drawablePadding="16dp"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- NEW: Refer & Earn Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_refer_earn"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="Refer &amp; Earn"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                app:icon="@drawable/ic_refer_earn"
+                app:iconPadding="16dp"/>
+
+            <!-- NEW: Logout Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="Logout"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textColor="@color/redx_secondary"
+                app:icon="@drawable/ic_logout"
+                app:iconTint="?attr/colorError"
+                app:iconPadding="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

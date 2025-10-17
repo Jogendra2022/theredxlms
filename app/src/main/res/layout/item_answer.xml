@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <!-- This TextView will show the question text, e.g., "Q1: What is AI?" -->
+    <TextView
+        android:id="@+id/text_item_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        tools:text="Q1: What is the capital of France?" />
+
+    <!-- This TextView will show the correct answer text, e.g., "Answer: Paris" -->
+    <TextView
+        android:id="@+id/text_item_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?attr/colorPrimary"
+        tools:text="Answer: Paris" />
+
+</LinearLayout>

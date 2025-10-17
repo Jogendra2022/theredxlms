@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AnswersActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review Answers"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:layout_marginBottom="16dp"/>
+
+    <!--
+      THIS IS THE WIDGET THAT WAS MISSING OR HAD THE WRONG ID.
+      The id below, "recycler_view_answers", now matches what your Java code is looking for.
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_answers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_answer"/>
+
+</LinearLayout>

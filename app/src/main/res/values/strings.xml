@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TheRedxLMS</string>
+
+    <!-- ADD THESE TWO LINES -->
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_description_open_profile">Open user profile</string>
+    <string name="content_description_view_notifications">View notifications</string>
+    <!-- ======================================================= -->
+
+
+</resources>

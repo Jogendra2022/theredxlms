@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default framework colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--
+    ============================================
+    Your Custom UI Design Elements
+    ============================================
+    -->
+
+    <!-- Primary Brand Color -->
+    <color name="redx_red">#E50914</color>
+
+    <!-- Secondary Brand Color -->
+    <color name="redx_secondary">#1A1A1A</color>
+
+    <!-- Accent / Text / Background Colors -->
+    <color name="redx_white">#FFFFFF</color>
+    <color name="redx_off_white">#F4F4F4</color>
+
+    <!-- Admin Dashboard Colors -->
+    <color name="admin_background">#F4F7FC</color>
+    <color name="admin_sidebar">#FFFFFF</color>
+    <color name="admin_primary">#4A90E2</color>
+    <color name="admin_text_primary">#4A4A4A</color>
+    <color name="admin_text_secondary">#7A869A</color>
+    <color name="admin_accent_blue">#509BF3</color>
+    <color name="admin_active_background">#EAF2FD</color>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "708314749003",
+    "project_id": "theredxlms",
+    "storage_bucket": "theredxlms.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708314749003:android:c11584ebafa8baf19c95ce",
+        "android_client_info": {
+          "package_name": "com.courses.theredxlms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNwQ1djMz6k3yV3q5PHoVk_91WdZaL6i4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

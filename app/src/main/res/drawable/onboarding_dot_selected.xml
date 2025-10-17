@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- This is the color of the dot when it is selected. You can change it. -->
+    <solid android:color="#1A1A1A" />
+
+    <!-- This is the size of the selected dot. -->
+    <size
+        android:width="12dp"
+        android:height="12dp" />
+
+</shape>
